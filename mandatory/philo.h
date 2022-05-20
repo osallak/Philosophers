@@ -6,7 +6,7 @@
 /*   By: osallak <osallak@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/11 16:24:31 by osallak           #+#    #+#             */
-/*   Updated: 2022/05/16 18:18:07 by osallak          ###   ########.fr       */
+/*   Updated: 2022/05/20 10:41:32 by osallak          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,12 +26,13 @@
 
 typedef struct s_info
 {
-	size_t		start_time;
-	int			number_of_philos;
-	int			time_to_eat;
-	int			time_to_die;
-	int			time_to_sleep;
-	int			meals;
+	size_t			start_time;
+	int				number_of_philos;
+	int				time_to_eat;
+	int				time_to_die;
+	int				time_to_sleep;
+	int				meals;
+	pthread_mutex_t	*pen;
 }	t_info;
 
 typedef struct s_philo
@@ -52,7 +53,7 @@ void		add_back(t_philo **head, t_philo *new);
 void		ft_usleep(size_t ms, size_t curr_time);
 void		check_death(t_philo *philos);
 void		create_threads(t_philo *philos);
-void		print_state(char *message, int id, size_t start_time);
+void		print_state(char *msg, int id, size_t ctime, pthread_mutex_t *pen);
 void		*routine(void *arg);
 
 #endif

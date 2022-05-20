@@ -6,7 +6,7 @@
 /*   By: osallak <osallak@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/16 16:11:32 by osallak           #+#    #+#             */
-/*   Updated: 2022/05/18 15:33:56 by osallak          ###   ########.fr       */
+/*   Updated: 2022/05/20 11:40:06 by osallak          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,14 +19,11 @@ void	ft_usleep(size_t ms, size_t curr_time)
 		usleep(100);
 }
 
-void	print_state(char *message, int id, size_t start_time)
+void	print_state(char *msg, int id, size_t start_time, pthread_mutex_t *pen)
 {
-	pthread_mutex_t	pen;
-
-	pthread_mutex_init(&pen, NULL);
-	pthread_mutex_lock(&pen);
-	printf("%lu %d %s\n", get_time() - start_time, id, message);
-	pthread_mutex_unlock(&pen);
+	pthread_mutex_lock(pen);
+	printf("%lu %d %s\n", get_time() - start_time, id, msg);
+	pthread_mutex_unlock(pen);
 }
 
 void	free_allocated_memory(t_philo *philos)
@@ -36,7 +33,7 @@ void	free_allocated_memory(t_philo *philos)
 
 	count = philos->infos->number_of_philos;
 	free(philos->infos);
-	while (count--)
+	while (count-- && philos)
 	{
 		tmp = philos;
 		philos = philos->next;
@@ -46,14 +43,17 @@ void	free_allocated_memory(t_philo *philos)
 
 void	check_death(t_philo *philos)
 {
-	int	check;
+	pthread_mutex_t	*pen;
+	size_t			s_t;
 
-	check = 0;
+	s_t = philos->infos->start_time;
+	pen = philos->infos->pen;
 	while (true)
 	{
 		if (get_time() - philos->last_meal > (size_t)philos->infos->time_to_die)
 		{
-			print_state("died", philos->id, philos->infos->start_time);
+			pthread_mutex_lock(pen);
+			printf("%lu %d died\n", get_time() - s_t, philos->id);
 			free_allocated_memory(philos);
 			exit(0);
 		}
@@ -72,6 +72,7 @@ void	create_threads(t_philo *philos)
 	t_philo	*tmp;
 
 	tmp = philos;
+	pthread_mutex_init(philos->infos->pen, NULL);
 	while (philos)
 	{
 		philos->meals = 0;

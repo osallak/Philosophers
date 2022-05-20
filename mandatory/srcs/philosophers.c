@@ -6,7 +6,7 @@
 /*   By: osallak <osallak@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/11 16:19:12 by osallak           #+#    #+#             */
-/*   Updated: 2022/05/18 15:00:58 by osallak          ###   ########.fr       */
+/*   Updated: 2022/05/20 10:47:39 by osallak          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,23 @@
 
 static void	take_forks(t_philo *philos)
 {
+	pthread_mutex_t	*pen;
+
+	pen = philos->infos->pen;
 	if ((philos->id % 2))
 	{
 		pthread_mutex_lock(&philos->fork);
-		print_state(TAKEN_FORK, philos->id, philos->infos->start_time);
+		print_state(TAKEN_FORK, philos->id, philos->infos->start_time, pen);
 		pthread_mutex_lock(&philos->next->fork);
-		print_state(TAKEN_FORK, philos->id, philos->infos->start_time);
+		print_state(TAKEN_FORK, philos->id, philos->infos->start_time, pen);
 	}
 	else
 	{
 		ft_usleep(2, get_time());
 		pthread_mutex_lock(&philos->next->fork);
-		print_state(TAKEN_FORK, philos->id, philos->infos->start_time);
+		print_state(TAKEN_FORK, philos->id, philos->infos->start_time, pen);
 		pthread_mutex_lock(&philos->fork);
-		print_state(TAKEN_FORK, philos->id, philos->infos->start_time);
+		print_state(TAKEN_FORK, philos->id, philos->infos->start_time, pen);
 	}
 }
 
@@ -47,22 +50,24 @@ static void	put_forks(t_philo *philos)
 
 void	*routine(void *arg)
 {
-	t_philo	*philos;
+	t_philo			*philos;
+	pthread_mutex_t	*pen;
 
 	philos = (t_philo *) arg;
+	pen = philos->infos->pen;
 	philos->last_meal = philos->infos->start_time;
 	philos->meals = 0;
 	while (true)
 	{
 		take_forks(philos);
-		print_state(EATING, philos->id, philos->infos->start_time);
+		print_state(EATING, philos->id, philos->infos->start_time, pen);
 		philos->meals++;
 		philos->last_meal = get_time();
 		ft_usleep(philos->infos->time_to_eat * 1000, get_time());
 		put_forks(philos);
-		print_state(SLEEPING, philos->id, philos->infos->start_time);
+		print_state(SLEEPING, philos->id, philos->infos->start_time, pen);
 		ft_usleep(philos->infos->time_to_sleep * 1000, get_time());
-		print_state(THINKING, philos->id, philos->infos->start_time);
+		print_state(THINKING, philos->id, philos->infos->start_time, pen);
 	}
 	return (NULL);
 }
