@@ -6,7 +6,7 @@
 /*   By: osallak <osallak@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/11 16:45:50 by osallak           #+#    #+#             */
-/*   Updated: 2022/05/18 14:07:03 by osallak          ###   ########.fr       */
+/*   Updated: 2022/05/19 11:46:05 by osallak          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ bool	check_errors(char **input)
 				return (false);
 			if ((c == '+' && !ft_isdigit(input[i][j + 1]))
 				|| (ft_isdigit(c)
-				&& (input[i][j+1] && !ft_isdigit(input[i][j + 1]))))
+				&& (input[i][j + 1] && !ft_isdigit(input[i][j + 1]))))
 				return (false);
 			j++;
 		}
@@ -55,7 +55,7 @@ t_info	*parser(char **input, int ac)
 {
 	t_info	*infos;
 
-	if (ac <= 4 || !check_errors(input))
+	if ((ac < 5 || ac > 6) || !check_errors(input))
 	{
 		printf("Error\n");
 		exit(0);

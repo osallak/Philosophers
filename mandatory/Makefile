@@ -1,20 +1,22 @@
 NAME = philo
 SRCS = srcs/philosophers.c \
-		srcs/list_sources.c \
-		srcs/parser.c \
-		srcs/utils.c \
+	srcs/list_sources.c\
+	srcs/parser.c\
+	srcs/utils.c \
 
-OBJCS = $(SRCS:.c=.o)
+RM = rm -rf
+CC = cc
+OBJS = $(SRCS:%.c=%.o)
 CFLAGS = -Wall -Wextra -Werror
 
-NAME : $(OBJS)
-	$(CC) -pthread $^ -o $@
-%.o : %.c
-	$(CC) $(CFLAGS) -c $< -o $@
+all : $(NAME)
 
+$(NAME) : $(OBJS)
+		$(CC) $(CFLAGS) $^ -o $@
+
+%.o : %.c philo.h
+		$(CC) $(CFLAGS) -c $< -I . -o $@
 clean :
-	rm -f $(OBJS)
+		$(RM) $(OBJS) $(B_OBJS)
 fclean : clean
-	rm -f $(NAME)
-
-re : fclean NAME
+		$(RM) $(NAME) $(NAME_B)
