@@ -1,0 +1,459 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.3
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+ 
+
+# Make data base, printed on Wed Aug 17 17:42:50 2022
+
+# Variables
+
+# environment
+GDK_BACKEND = x11
+# environment
+LC_ALL = C
+# environment
+NO_AT_BRIDGE = 1
+# environment
+GNOME_SHELL_SESSION_MODE = ubuntu
+# environment
+SSH_AGENT_LAUNCHER = gnome-keyring
+# environment
+SNAP_INSTANCE_KEY = 
+# environment
+OSH = /home/uss4ma/.oh-my-bash
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# environment
+LC_NAME = ar_MA.UTF-8
+# environment
+LC_NUMERIC = ar_MA.UTF-8
+# environment
+VSCODE_CWD = /home/uss4ma/Desktop/Philosophers/mandatory
+# environment
+LC_ADDRESS = ar_MA.UTF-8
+# default
+MAKE_COMMAND := make
+# environment
+QT_ACCESSIBILITY = 1
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+SNAP_INSTANCE_NAME = code
+# environment
+GDK_PIXBUF_MODULEDIR = /snap/code/103/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /home/uss4ma/Desktop/Philosophers/mandatory
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# environment
+XDG_DATA_DIRS = /usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# environment
+OLDPWD = /home/uss4ma/Desktop/Philosophers
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = /home/uss4ma/.config/Code/CachedData/da76f93349a72022ca4670c1b84860304616aaa2
+# environment
+LANG = C
+# environment
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.BG8SQ1
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
+# makefile
+MAKEFLAGS = pqrR
+# makefile
+CURDIR := /home/uss4ma/Desktop/Philosophers/mandatory
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# makefile (from 'Makefile', line 2)
+SRCS = srcs/philosophers.c srcs/list_sources.c srcs/parser.c srcs/utils.c 
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MFLAGS = -pqrR
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# default
+.SHELLFLAGS := -c
+# environment
+WAYLAND_DISPLAY = wayland-0
+# environment
+HISTSIZE = 50000
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+XDG_SESSION_DESKTOP = ubuntu
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST := Makefile
+# environment
+SNAP_REEXEC = 
+# automatic
+@F = $(notdir $@)
+# environment
+ZSH = /home/uss4ma/.oh-my-zsh
+# environment
+VSCODE_PID = 886832
+# environment
+HISTIGNORE = &:[ ]*:exit:ls:bg:fg:history:clear
+# environment
+XDG_SESSION_TYPE = wayland
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+SESSION_MANAGER = local/c3p0:@/tmp/.ICE-unix/1951,unix/c3p0:/tmp/.ICE-unix/1951
+# automatic
+*F = $(notdir $*)
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+HISTFILESIZE = 
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# makefile (from 'Makefile', line 9)
+OBJS = $(SRCS:%.c=%.o)
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# makefile
+SHELL = /bin/sh
+# default
+MAKECMDGOALS := all
+# environment
+PLATFORMIO_CALLER = vscode
+# environment
+XMODIFIERS = @im=ibus
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# environment
+SHLVL = 2
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+SNAP_COOKIE = dcu_rF01FNbqjkVzn4Kz6rsE-QjRlnSxQpzWGnHGOyduzGweMJok
+# environment
+PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+# default
+MAKEFILES := 
+# environment
+LC_MONETARY = ar_MA.UTF-8
+# automatic
+^F = $(notdir $^)
+# environment
+SNAP_USER_COMMON = /home/uss4ma/snap/code/common
+# environment
+LC_TIME = ar_MA.UTF-8
+# environment
+SNAP = /snap/code/103
+# environment
+INVOCATION_ID = 7f6a548edfa5476db9edd56d730c2a20
+# environment
+SNAP_REVISION = 103
+# environment
+SNAP_REAL_HOME = /home/uss4ma
+# environment
+USERNAME = uss4ma
+# environment
+GNOME_SETUP_DISPLAY = :1
+# environment
+LC_TELEPHONE = ar_MA.UTF-8
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# automatic
+?F = $(notdir $?)
+# makefile (from 'Makefile', line 1)
+NAME = philo
+# environment
+NO_PROXY = 127.0.0.1
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# environment
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+# automatic
++F = $(notdir $+)
+# environment
+LESS = -R
+# environment
+DESKTOP_SESSION = ubuntu
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+LOGNAME = uss4ma
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/kitty.desktop
+# environment
+PLATFORMIO_PATH = /home/uss4ma/.platformio/penv/bin:/home/uss4ma/.platformio/penv:/home/uss4ma/.platformio/python3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+# environment
+SNAP_ARCH = amd64
+# makefile
+.DEFAULT_GOAL := all
+# environment
+SYSTEMD_EXEC_PID = 1974
+# makefile (from 'Makefile', line 7)
+ 
+RM = rm -rf
+# environment
+KITTY_WINDOW_ID = 1
+# environment
+DISPLAY = :0
+# environment
+USER = uss4ma
+# environment
+GTK_MODULES = gail:atk-bridge
+# default
+MAKE_VERSION := 4.3
+# environment
+DISABLE_WAYLAND = 1
+# environment
+SNAP_DATA = /var/snap/code/103
+# environment
+SNAP_CONTEXT = dcu_rF01FNbqjkVzn4Kz6rsE-QjRlnSxQpzWGnHGOyduzGweMJok
+# environment
+MANAGERPID = 1846
+# environment
+LC_MEASUREMENT = ar_MA.UTF-8
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 246440
+# environment
+PAGER = less
+# environment
+LC_PAPER = ar_MA.UTF-8
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# makefile (from 'Makefile', line 10)
+CFLAGS = -Wall -Wextra -Werror
+# environment
+COLORTERM = truecolor
+# environment
+GDK_PIXBUF_MODULE_FILE = /home/uss4ma/snap/code/common/.cache/gdk-pixbuf-loaders.cache
+# environment
+LC_CTYPE = en_US.UTF-8
+# environment
+JOURNAL_STREAM = 8:32592
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+PLATFORMIO_IDE = 2.5.2
+# environment
+HOME = /home/uss4ma
+# environment
+QT_IM_MODULE = ibus
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-c3f7da8c-1.70.0-main.sock
+# environment
+TERM = xterm-kitty
+# environment
+SNAP_NAME = code
+# environment
+GSETTINGS_SCHEMA_DIR = /snap/code/103/usr/share/glib-2.0/schemas
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# environment
+SNAP_VERSION = da76f933
+# default
+SUFFIXES := 
+# environment
+VSCODE_CLI = 1
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+SNAP_COMMON = /var/snap/code/common
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
+# makefile (from 'Makefile', line 8)
+CC = cc
+# environment
+SNAP_USER_DATA = /home/uss4ma/snap/code/103
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+GDMSESSION = ubuntu
+# environment
+LC_IDENTIFICATION = ar_MA.UTF-8
+# environment
+SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
+# variable set hash-table stats:
+# Load=145/1024=14%, Rehash=0, Collisions=12/179=7%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2051, inode 4497461): 7 files, no impossibilities.
+# srcs (device 2051, inode 4497462): 10 files, no impossibilities so far.
+
+# 17 files, no impossibilities in 2 directories.
+
+# Implicit Rules
+
+%.o: %.c philo.h
+#  recipe to execute (from 'Makefile', line 18):
+		$(CC) $(CFLAGS) -c $< -I . -o $@
+
+# 1 implicit rules, 0 (0.0%) terminal.
+# Files
+
+# Not a target:
+srcs/list_sources.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-17 17:28:55.519900053
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-17 17:42:38.660346943
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+philo.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-17 17:28:55.519900053
+ 
+#  File has been updated.
+#  Successfully updated.
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 20):
+		$(RM) $(OBJS) $(B_OBJS)
+
+# Not a target:
+srcs/utils.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-17 17:41:58.063061943
+#  File has been updated.
+#  Successfully updated.
+
+srcs/list_sources.o: srcs/list_sources.c philo.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'srcs/list_sources'
+#  Last modified 2022-08-17 17:29:04.140288237
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 18):
+		$(CC) $(CFLAGS) -c $< -I . -o $@
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+srcs/parser.o: srcs/parser.c philo.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'srcs/parser'
+#  Last modified 2022-08-17 17:29:04.176289859
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 18):
+		$(CC) $(CFLAGS) -c $< -I . -o $@
+
+srcs/philosophers.o: srcs/philosophers.c philo.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'srcs/philosophers'
+#  Last modified 2022-08-17 17:42:40.85303469
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 18):
+		$(CC) $(CFLAGS) -c $< -I . -o $@
+
+all: philo
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+
+fclean: clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 22):
+		$(RM) $(NAME) $(NAME_B)
+
+srcs/utils.o: srcs/utils.c philo.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'srcs/utils'
+#  Last modified 2022-08-17 17:42:40.889107674
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 18):
+		$(CC) $(CFLAGS) -c $< -I . -o $@
+
+# Not a target:
+srcs/parser.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-17 17:28:55.523900233
+#  File has been updated.
+#  Successfully updated.
+
+philo: srcs/philosophers.o srcs/list_sources.o srcs/parser.o srcs/utils.o
+#  Implicit rule search has not been done.
+#  Last modified 2022-08-17 17:42:40.909148222
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 15):
+		$(CC) $(CFLAGS) $^ -o $@ -lpthread
+
+# Not a target:
+srcs/philosophers.c:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2022-08-17 17:39:52.405477766
+#  File has been updated.
+#  Successfully updated.
+
+# files hash-table stats:
+# Load=16/1024=2%, Rehash=0, Collisions=0/54=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 36 / storage = 404 B / avg = 11 B
+# current buf: size = 8162 B / used = 404 B / count = 36 / avg = 11 B
+
+# strcache performance: lookups = 64 / hit rate = 43%
+# hash-table stats:
+# Load=36/8192=0%, Rehash=0, Collisions=0/64=0%
+# Finished Make data base on Wed Aug 17 17:42:50 2022
+
+ 

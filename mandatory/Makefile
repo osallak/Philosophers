@@ -12,7 +12,7 @@ CFLAGS = -Wall -Wextra -Werror
 all : $(NAME)
 
 $(NAME) : $(OBJS)
-		$(CC) $(CFLAGS) $^ -o $@
+		$(CC) $(CFLAGS) $^ -o $@ -lpthread
 
 %.o : %.c philo.h
 		$(CC) $(CFLAGS) -c $< -I . -o $@

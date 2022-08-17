@@ -6,7 +6,7 @@
 /*   By: osallak <osallak@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/16 16:11:32 by osallak           #+#    #+#             */
-/*   Updated: 2022/05/20 11:40:06 by osallak          ###   ########.fr       */
+/*   Updated: 2022/08/17 17:50:35 by osallak          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,6 +72,7 @@ void	create_threads(t_philo *philos)
 	t_philo	*tmp;
 
 	tmp = philos;
+	philos->infos->pen = malloc(sizeof(pthread_mutex_t));
 	pthread_mutex_init(philos->infos->pen, NULL);
 	while (philos)
 	{
